@@ -1,6 +1,12 @@
-import ChipsInput from './ChipsInput';
+import ChipsInput from './component/ChipsInput';
 import './App.css';
+import LeapYear from './component/leapyear';
 
 export default function App() {
-  return <ChipsInput />;
+  return (
+    <div className="App">
+      <ChipsInput />
+      <LeapYear />
+    </div>
+  );
 }
