@@ -18,4 +18,15 @@ const sumOfArrayRecursion = () => {
         return array[n] + sum(n-1);
     }
     console.log(sum(array.length - 1));
+// Sum of odd numbers in an array using recursion
+let arr = [5, 3, 2, 0, 1]
+    function sumOddArray(n) {
+    let isOdd = (arr[n] % 2 != 0);
+    if (n === 0) {
+        return isOdd ? arr[n] : 0;
+    }
+    return (isOdd ? arr[n] : 0) + sum(n - 1);
+    }
+    console.log(sumOddArray(arr.length - 1));
+
 }
