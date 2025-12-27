@@ -48,7 +48,27 @@ const StarPattern = ({ rating }) => {
             console.log(row);
         }
     }
+ function printReverseNum(n) {
+        /*
+                    *
+                   **
+                  ***
+                 ****
+                *****
+        */
+     for (let i = 0; i < n; i++) {
+         let row = "";
 
+         for (let k = 0; k < n - (i + 1); k++){
+             row = row + " ";
+         }
+         for (let j = 0; j <= i; j++) {
+             row = row + "*";
+         }
+         console.log(row);
+     }
+ }
+printReverseNum(5) 
     return <div>Check the console for the star pattern.</div>;
 };
 
