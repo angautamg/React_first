@@ -93,6 +93,31 @@ printReverseNum(5)
      }
  }
 printReverseNum(5) 
+function printZeroOne(n) {
+        /*
+        1
+        01
+        010
+        1010
+        10101
+        */
+        let toggle = 1;
+     for (let i = 0; i < n; i++) {
+         let row = ""; 
+         
+        //  for (let k = 0; k < n - (i + 1); k++){
+        //      row = row + " ";
+        //  }
+         for (let j = 0; j <= i; j++) {
+             row = row + toggle;
+             if (toggle === 1) toggle = 0;
+             else
+                 toggle = 1;
+         }
+         console.log(row);
+     }
+ }
+printZeroOne(5) 
     return <div>Check the console for the star pattern.</div>;
 };
 
