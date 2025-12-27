@@ -69,6 +69,30 @@ const StarPattern = ({ rating }) => {
      }
  }
 printReverseNum(5) 
+ function printSwitchNum(n) {
+        /*
+        1
+        101
+        101
+        1010
+        10101
+        */
+     for (let i = 0; i < n; i++) {
+         let row = ""; let switchs = 1;
+         
+        //  for (let k = 0; k < n - (i + 1); k++){
+        //      row = row + " ";
+        //  }
+         for (let j = 0; j <= i; j++) {
+             row = row + switchs;
+             if (switchs === 1) switchs = 0;
+             else
+                 switchs = 1;
+         }
+         console.log(row);
+     }
+ }
+printReverseNum(5) 
     return <div>Check the console for the star pattern.</div>;
 };
 
