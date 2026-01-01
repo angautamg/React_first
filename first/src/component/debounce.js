@@ -12,5 +12,6 @@ export default debounce;
 const handleResize = () => {
   console.log('Window resized');
 };
+
 const debouncedResize = debounce(handleResize, 300);
 window.addEventListener('resize', debouncedResize);
