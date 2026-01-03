@@ -1,0 +1,97 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>404 | Page Not Found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", system-ui, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+
+    .container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(14px);
+      padding: 50px 40px;
+      border-radius: 18px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+      max-width: 500px;
+      width: 90%;
+    }
+
+    h1 {
+      font-size: 5rem;
+      font-weight: 800;
+      letter-spacing: 4px;
+      color: #ffb703;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-top: 10px;
+    }
+
+    p {
+      margin: 15px 0 30px;
+      font-size: 0.95rem;
+      opacity: 0.85;
+      line-height: 1.6;
+    }
+
+    a {
+      display: inline-block;
+      padding: 12px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      background: #ffb703;
+      color: #1b1b1b;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      background: #ffd166;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 0.8rem;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>404</h1>
+    <h2>Page Not Found</h2>
+
+    <p>
+      The page you’re looking for doesn’t exist or may have been moved.
+      Please check the URL or return to the homepage.
+    </p>
+
+    <a href="/">← Back to Home</a>
+
+    <div class="footer">
+      © 2026 • Express Server
+    </div>
+  </div>
+</body>
+</html>

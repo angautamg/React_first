@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Server Sent Events</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="app">
+        <header>
+            <h1>📡 Server Sent Events</h1>
+            <p>Live data stream from server</p>
+        </header>
+
+        <!-- Server injects SSE data here -->
+        <section class="event-box">
+            <pre class="event-stream">
+        event: message
+        data: Server connected successfully
+
+        event: update
+        data: Processing request...
+
+        event: update
+        data: Task completed
+      </pre>
+       <div id="sse-data">
+          
+        </div>
+        </section>
+      
+        <footer>
+            <span>Status: Connected</span>
+        </footer>
+    </div>
+     
+</body>
+<script>
+  const eventSource = new EventSource('/sse');
+  const box = document.getElementById('sse-data');
+
+  eventSource.onmessage = (event) => {
+    console.log('New message:', event.data);
+
+    const p = document.createElement('p');
+    p.textContent = event.data;
+    box.appendChild(p);
+    box.scrollTop = box.scrollHeight;
+  };
+
+  eventSource.onerror = () => {
+    console.error('SSE connection lost');
+  };
+</script>
+
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "websocket",
+  "version": "1.0.0",
+  "description": "test web socket and understand",
+  "keywords": [
+    "test",
+    "web",
+    "socket",
+    "app",
+    "in",
+    "nodejs"
+  ],
+  "license": "ISC",
+  "author": "me",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "test"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "nodemon": "^3.1.11",
+    "socket": "^1.1.51",
+    "socket.io": "^4.8.3"
+  }
+}
