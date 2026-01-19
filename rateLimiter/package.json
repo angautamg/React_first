@@ -1,0 +1,24 @@
+{
+  "name": "ratelimiter",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "rate",
+    "limit"
+  ],
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1",
+    "ioredis": "^5.9.2",
+    "nodemon": "^3.1.11",
+    "rate-limit-redis": "^4.3.1"
+  }
+}
